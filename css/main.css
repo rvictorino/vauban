@@ -1,0 +1,48 @@
+#upload-zone {
+  width:
+}
+#upload-zone-icon {
+    cursor: pointer;
+    margin-bottom: 100px;
+    border-radius: 50%;
+}
+.error-404 h1 {
+  font-size: 98px;
+}
+.error-404 p {
+  font-size: 30px;
+}
+.file-list{
+  display: block;
+  padding: 0;
+}
+.file-list li {
+  height: 50px;
+  line-height: 50px;
+  list-style-type: none;
+  border-top: 1px solid #95a5a6;
+}
+.file-list li a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+}
+.file-list li a i {
+  margin-right:10px;
+  margin-left: 10px;
+}
+
+.file-list li a:hover {
+  background-color: rgba(50, 50, 50, 0.1);
+  text-decoration: none;
+}
+.file-list li:first-child{
+  border-top: 0px;
+}
+.file-list .file{
+
+}
+.file-list .dir{
+
+}

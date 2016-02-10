@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vauban</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+    <link href="/css/roboto.min.css" rel="stylesheet">
+    <link href="/css/material.min.css" rel="stylesheet">
+    <link href="/css/ripples.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+</head>
+<body style="padding-top: 70px;">
+    <nav class="navbar navbar-warning navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <b><img alt="Vauban" src=""></b>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+  <form id="upload-form" action="" method="post">
+    <input id="directory" name="directory" type="text"  />
+    <input name="file" type="file"/>
+    <button id="upload-button" type="button">Upload</button>
+  </form>
+<!--
+    <form action="/file-upload" class="dropzone" id="upload-zone">
+        <div class="fallback">
+            <input name="file" type="file" multiple />
+        </div>
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+    <i id="upload-zone-icon" class="mdi-file-file-upload" style="font-size: 80pt;"></i>
+    </form>
+-->
+    <script src="/js/jquery-1.11.3.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <script src="/js/ripples.min.js"></script>
+    <script src="/js/material.min.js"></script>
+
+    <script src="/js/dropzone.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $("#upload-button").on("click", function(){
+              console.log("faa");
+              $("#upload-form").attr("action", $("#directory").val());
+              console.log($("#upload-form").attr("action"));
+              $("#upload-form").submit();
+          });
+          // This command is used to initialize some elements and make them work properly
+          /*$.material.init();
+          $("#upload-zone-icon").ripples();
+
+          var myDropzone = new Dropzone("#upload-zone", {
+              url: "/file/post",
+              clickable: "#upload-zone-icon",
+              dictDefaultMessage: ''
+          });
+          myDropzone.on("dragenter", function(ev){
+              $("#upload-zone").ripples();
+          });
+
+          $.ajax({
+              url:
+          });*/
+      });
+    </script>
+</body>
+</html>
